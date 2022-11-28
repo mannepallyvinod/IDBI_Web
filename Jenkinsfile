@@ -24,7 +24,7 @@ node{
 '''
    }*/
    stage('Deploy to Tomcat'){
-     bat "copy target\\IDBI_Web.war\"${tomcatWeb}\\IDBI_Web.war\""
+     bat "xcopy target\\IDBI_Web.war\"${tomcatWeb}\\IDBI_Web.war\""
    }
       stage ('Start Tomcat Server') {
          sleep(time:5,unit:"SECONDS") 
